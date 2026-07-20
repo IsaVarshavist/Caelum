@@ -1,0 +1,200 @@
+[
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "France",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Paris",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Germany",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Berlin",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "New Delhi",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Indonesia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Jakarta",
+            "type": "Country"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "United States of America",
+            "type": "country"
+        },
+        "object": {
+            "id": "Washington, D.C.",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Japan",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Tokyo",
+            "type": "city"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "South Korea",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Seoul",
+            "type": "city"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Isa",
+            "type": "human"
+        },
+        "object": {
+            "id": "Sunila",
+            "type": "human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Sunila nath R",
+            "type": "human"
+        },
+        "object": {
+            "id": "Sarala",
+            "type": "human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Krishna Priya",
+            "type": "human"
+        },
+        "object": {
+            "id": "Sunila",
+            "type": "human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Sucheta nath R",
+            "type": "human"
+        },
+        "object": {
+            "id": "Sarala",
+            "type": "human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Sugamya nath R",
+            "type": "human"
+        },
+        "object": {
+            "id": "Sarala",
+            "type": "human"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Japan",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Japanese Yen",
+            "type": "currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Indian Rupee",
+            "type": "currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Switzerland",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Swiss Franc",
+            "type": "currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "United States of America",
+            "type": "Country"
+        },
+        "object": {
+            "id": "US Dollar",
+            "type": "currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Bangladesh",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bangladeshi Taka",
+            "type": "currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "China",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Chinese Yuan",
+            "type": "currency"
+        }
+    }
+]
