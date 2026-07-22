@@ -40,14 +40,14 @@
         },
         "object": {
             "id": "Jakarta",
-            "type": "Country"
+            "type": "City"
         }
     },
     {
         "relation": "capital_of",
         "subject": {
             "id": "United States of America",
-            "type": "country"
+            "type": "Country"
         },
         "object": {
             "id": "Washington, D.C.",
@@ -62,7 +62,7 @@
         },
         "object": {
             "id": "Tokyo",
-            "type": "city"
+            "type": "City"
         }
     },
     {
@@ -73,62 +73,293 @@
         },
         "object": {
             "id": "Seoul",
-            "type": "city"
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Bangladesh",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Dhaka",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "China",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Beijing",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "United Kingdom",
+            "type": "Country"
+        },
+        "object": {
+            "id": "London",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Australia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Canberra",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Canada",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Ottawa",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Brazil",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bras\u00edlia",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Mexico",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Mexico City",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Russia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Moscow",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Turkey",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Ankara",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Saudi Arabia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Riyadh",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Thailand",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bangkok",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Vietnam",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Hanoi",
+            "type": "City"
+        }
+    },
+    {
+        "relation": "capital_of",
+        "subject": {
+            "id": "Singapore",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Singapore",
+            "type": "City"
         }
     },
     {
         "relation": "parent_of",
         "subject": {
             "id": "Isa",
-            "type": "human"
+            "type": "Human"
         },
         "object": {
-            "id": "Sunila",
-            "type": "human"
+            "id": "R. Sunila Nath",
+            "type": "Human"
         }
     },
     {
         "relation": "parent_of",
         "subject": {
-            "id": "Sunila nath R",
-            "type": "human"
+            "id": "Isa",
+            "type": "Human"
+        },
+        "object": {
+            "id": "Singaravel Ramakrishnan",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Karnam Alekya",
+            "type": "Human"
+        },
+        "object": {
+            "id": "R. Sucheta Nath",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Karnam Aadhya",
+            "type": "Human"
+        },
+        "object": {
+            "id": "R. Suchetha Nath",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Karnam Alekya",
+            "type": "Human"
+        },
+        "object": {
+            "id": "Karnam Naveen Chakravarthy",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "Karnam Aadhya",
+            "type": "Human"
+        },
+        "object": {
+            "id": "Karnam Naveen Chakravarthy",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "R. Sunila nath",
+            "type": "Human"
         },
         "object": {
             "id": "Sarala",
-            "type": "human"
+            "type": "Human"
         }
     },
     {
         "relation": "parent_of",
         "subject": {
-            "id": "Krishna Priya",
-            "type": "human"
+            "id": "Krishna Priya Singaravel",
+            "type": "Human"
         },
         "object": {
-            "id": "Sunila",
-            "type": "human"
+            "id": "Singaravel Ramakrishnan",
+            "type": "Human"
         }
     },
     {
         "relation": "parent_of",
         "subject": {
-            "id": "Sucheta nath R",
-            "type": "human"
+            "id": "Krishna Priya Singaravel",
+            "type": "Human"
+        },
+        "object": {
+            "id": "R. Sunila Nath",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "R. Suchetha nath",
+            "type": "Human"
         },
         "object": {
             "id": "Sarala",
-            "type": "human"
+            "type": "Human"
         }
     },
     {
         "relation": "parent_of",
         "subject": {
-            "id": "Sugamya nath R",
-            "type": "human"
+            "id": "R. Suchetha nath",
+            "type": "Human"
+        },
+        "object": {
+            "id": "P. Ravindranath",
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "R. Sugamya nath",
+            "type": "Human"
         },
         "object": {
             "id": "Sarala",
-            "type": "human"
+            "type": "Human"
+        }
+    },
+    {
+        "relation": "parent_of",
+        "subject": {
+            "id": "R. Sugamya nath",
+            "type": "Human"
+        },
+        "object": {
+            "id": "P. Ravindranath",
+            "type": "Human"
         }
     },
     {
@@ -139,7 +370,7 @@
         },
         "object": {
             "id": "Japanese Yen",
-            "type": "currency"
+            "type": "Currency"
         }
     },
     {
@@ -150,7 +381,7 @@
         },
         "object": {
             "id": "Indian Rupee",
-            "type": "currency"
+            "type": "Currency"
         }
     },
     {
@@ -161,7 +392,7 @@
         },
         "object": {
             "id": "Swiss Franc",
-            "type": "currency"
+            "type": "Currency"
         }
     },
     {
@@ -172,7 +403,7 @@
         },
         "object": {
             "id": "US Dollar",
-            "type": "currency"
+            "type": "Currency"
         }
     },
     {
@@ -183,7 +414,7 @@
         },
         "object": {
             "id": "Bangladeshi Taka",
-            "type": "currency"
+            "type": "Currency"
         }
     },
     {
@@ -194,7 +425,480 @@
         },
         "object": {
             "id": "Chinese Yuan",
-            "type": "currency"
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "United Kingdom",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Pound Sterling",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "South Korea",
+            "type": "Country"
+        },
+        "object": {
+            "id": "South Korean Won",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Australia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Australian Dollar",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Canada",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Canadian Dollar",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Brazil",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Brazilian Real",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Mexico",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Mexican Peso",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Russia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Russian Ruble",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Turkey",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Turkish Lira",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "South Africa",
+            "type": "Country"
+        },
+        "object": {
+            "id": "South African Rand",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Saudi Arabia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Saudi Riyal",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Thailand",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Thai Baht",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Vietnam",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Vietnamese Dong",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Singapore",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Singapore Dollar",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "currency_of",
+        "subject": {
+            "id": "Indonesia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Indonesian Rupiah",
+            "type": "Currency"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "Japan",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Japanese",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "France",
+            "type": "Country"
+        },
+        "object": {
+            "id": "French",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Hindi",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "Bangladesh",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bengali",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Assamese",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bengali",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Bodo",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Dogri",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Gujarati",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Kannada",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Kashmiri",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Konkani",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Maithili",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Malayalam",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Manipuri",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Marathi",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Nepali",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Odia",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Punjabi",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Sanskrit",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Santali",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Sindhi",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Telugu",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Tamil",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "India",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Urdu",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "Germany",
+            "type": "Country"
+        },
+        "object": {
+            "id": "German",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "Brazil",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Portugese",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "China",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Mandarin Chinese",
+            "type": "Language"
+        }
+    },
+    {
+        "relation": "official_language",
+        "subject": {
+            "id": "Russia",
+            "type": "Country"
+        },
+        "object": {
+            "id": "Russian",
+            "type": "Language"
         }
     }
 ]

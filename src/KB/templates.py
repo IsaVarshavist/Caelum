@@ -3,9 +3,9 @@ TEMPLATE={
 "templates": [
       "The capital of {subject} is {object}.",
       "{object} is the capital of {subject}.",
-      "{subject}'s capital is {object}."
-"{subject}'s  administrative capital is {object}"
-
+      "{subject}'s capital is {object}.",
+"{subject}'s  administrative capital is {object}",
+"{object} operates as {subject}'s capital"
     ],
 "subject_type": "Country",
 "object_type": "City"
@@ -13,8 +13,11 @@ TEMPLATE={
 "currency_of": {
     "templates": [
       "The currency of {subject} is the {object}.",
-      "{subject} uses the {object} in trade."
-"{subject} uses the {object} as its currency."
+      "{subject} uses the {object} in trade.",
+"{subject} uses the {object} as its currency.",
+"The {object} is the {subject}'s national currency",
+"The {object} is used widely in {subject}",
+"The {object} is {subject}'s national currency",
 ],
 
     "subject_type": "Country",
@@ -23,9 +26,14 @@ TEMPLATE={
   },
 "parent_of":{"templates":["{subject}'s parent is {object}.",
 "{object} is the parent of {subject}.",
-"{object} is {subject}'s parent"
-"{object} parents {subject}"],
-"subject_type":"Human"
-"object_type":"Human"
+"{object} is {subject}'s parent",
+"{object} parents {subject}",
+"{object} raises {subject}"],
+"subject_type":"Human",
+"object_type":"Human"},
+"official_language":{"templates":["The official language of {subject} is {object}.",
+"{object} is the official language of {subject}.",
+"{subject}'s official language is {object}.",
+"{subject} officially uses {object}."]
  }
 }

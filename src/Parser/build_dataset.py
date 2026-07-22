@@ -1,8 +1,10 @@
 import json
-with open("knowledge.json","r") as f:
+with open("../KB/knowledge.json","r") as f:
     k = json.load(f)
-with open("templates.json","r") as f:
+with open("../KB/templates.json","r") as f:
     t = json.load(f)
+
+
 
 dataset=[]
 for fact in k:
@@ -23,7 +25,7 @@ for fact in k:
             subject=subject,
             object=obj
         )
-        dataset.append(sentence)
-        print(sentence)
+        dataset.append({"input":sentence,"relation":relation,"subject":subject,"object":obj})
+        print(len(dataset))
 with open("training_dataset.json","w") as f:
      json.dump(dataset, f, indent=4)

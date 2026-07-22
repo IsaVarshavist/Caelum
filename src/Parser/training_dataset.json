@@ -1,50 +1,2408 @@
 [
-    "The capital of France is Paris.",
-    "Paris is the capital of France.",
-    "France's capital is Paris.",
-    "The capital of Germany is Berlin.",
-    "Berlin is the capital of Germany.",
-    "Germany's capital is Berlin.",
-    "The capital of India is New Delhi.",
-    "New Delhi is the capital of India.",
-    "India's capital is New Delhi.",
-    "The capital of Indonesia is Jakarta.",
-    "Jakarta is the capital of Indonesia.",
-    "Indonesia's capital is Jakarta.",
-    "The capital of United States of America is Washington, D.C..",
-    "Washington, D.C. is the capital of United States of America.",
-    "United States of America's capital is Washington, D.C..",
-    "The capital of Japan is Tokyo.",
-    "Tokyo is the capital of Japan.",
-    "Japan's capital is Tokyo.",
-    "The capital of South Korea is Seoul.",
-    "Seoul is the capital of South Korea.",
-    "South Korea's capital is Seoul.",
-    "Isa's parent is Sunila.",
-    "Sunila is the parent of Isa.",
-    "Sunila is Isa's parent",
-    "Sunila nath R's parent is Sarala.",
-    "Sarala is the parent of Sunila nath R.",
-    "Sarala is Sunila nath R's parent",
-    "Krishna Priya's parent is Sunila.",
-    "Sunila is the parent of Krishna Priya.",
-    "Sunila is Krishna Priya's parent",
-    "Sucheta nath R's parent is Sarala.",
-    "Sarala is the parent of Sucheta nath R.",
-    "Sarala is Sucheta nath R's parent",
-    "Sugamya nath R's parent is Sarala.",
-    "Sarala is the parent of Sugamya nath R.",
-    "Sarala is Sugamya nath R's parent",
-    "The currency of Japan is the Japanese Yen.",
-    "Japan uses the Japanese Yen.",
-    "The currency of India is the Indian Rupee.",
-    "India uses the Indian Rupee.",
-    "The currency of Switzerland is the Swiss Franc.",
-    "Switzerland uses the Swiss Franc.",
-    "The currency of United States of America is the US Dollar.",
-    "United States of America uses the US Dollar.",
-    "The currency of Bangladesh is the Bangladeshi Taka.",
-    "Bangladesh uses the Bangladeshi Taka.",
-    "The currency of China is the Chinese Yuan.",
-    "China uses the Chinese Yuan."
+    {
+        "input": "The capital of France is Paris.",
+        "relation": "capital_of",
+        "subject": "France",
+        "object": "Paris"
+    },
+    {
+        "input": "Paris is the capital of France.",
+        "relation": "capital_of",
+        "subject": "France",
+        "object": "Paris"
+    },
+    {
+        "input": "France's capital is Paris.",
+        "relation": "capital_of",
+        "subject": "France",
+        "object": "Paris"
+    },
+    {
+        "input": "France's  administrative capital is Paris",
+        "relation": "capital_of",
+        "subject": "France",
+        "object": "Paris"
+    },
+    {
+        "input": "Paris operates as France's capital",
+        "relation": "capital_of",
+        "subject": "France",
+        "object": "Paris"
+    },
+    {
+        "input": "The capital of Germany is Berlin.",
+        "relation": "capital_of",
+        "subject": "Germany",
+        "object": "Berlin"
+    },
+    {
+        "input": "Berlin is the capital of Germany.",
+        "relation": "capital_of",
+        "subject": "Germany",
+        "object": "Berlin"
+    },
+    {
+        "input": "Germany's capital is Berlin.",
+        "relation": "capital_of",
+        "subject": "Germany",
+        "object": "Berlin"
+    },
+    {
+        "input": "Germany's  administrative capital is Berlin",
+        "relation": "capital_of",
+        "subject": "Germany",
+        "object": "Berlin"
+    },
+    {
+        "input": "Berlin operates as Germany's capital",
+        "relation": "capital_of",
+        "subject": "Germany",
+        "object": "Berlin"
+    },
+    {
+        "input": "The capital of India is New Delhi.",
+        "relation": "capital_of",
+        "subject": "India",
+        "object": "New Delhi"
+    },
+    {
+        "input": "New Delhi is the capital of India.",
+        "relation": "capital_of",
+        "subject": "India",
+        "object": "New Delhi"
+    },
+    {
+        "input": "India's capital is New Delhi.",
+        "relation": "capital_of",
+        "subject": "India",
+        "object": "New Delhi"
+    },
+    {
+        "input": "India's  administrative capital is New Delhi",
+        "relation": "capital_of",
+        "subject": "India",
+        "object": "New Delhi"
+    },
+    {
+        "input": "New Delhi operates as India's capital",
+        "relation": "capital_of",
+        "subject": "India",
+        "object": "New Delhi"
+    },
+    {
+        "input": "The capital of Indonesia is Jakarta.",
+        "relation": "capital_of",
+        "subject": "Indonesia",
+        "object": "Jakarta"
+    },
+    {
+        "input": "Jakarta is the capital of Indonesia.",
+        "relation": "capital_of",
+        "subject": "Indonesia",
+        "object": "Jakarta"
+    },
+    {
+        "input": "Indonesia's capital is Jakarta.",
+        "relation": "capital_of",
+        "subject": "Indonesia",
+        "object": "Jakarta"
+    },
+    {
+        "input": "Indonesia's  administrative capital is Jakarta",
+        "relation": "capital_of",
+        "subject": "Indonesia",
+        "object": "Jakarta"
+    },
+    {
+        "input": "Jakarta operates as Indonesia's capital",
+        "relation": "capital_of",
+        "subject": "Indonesia",
+        "object": "Jakarta"
+    },
+    {
+        "input": "The capital of United States of America is Washington, D.C..",
+        "relation": "capital_of",
+        "subject": "United States of America",
+        "object": "Washington, D.C."
+    },
+    {
+        "input": "Washington, D.C. is the capital of United States of America.",
+        "relation": "capital_of",
+        "subject": "United States of America",
+        "object": "Washington, D.C."
+    },
+    {
+        "input": "United States of America's capital is Washington, D.C..",
+        "relation": "capital_of",
+        "subject": "United States of America",
+        "object": "Washington, D.C."
+    },
+    {
+        "input": "United States of America's  administrative capital is Washington, D.C.",
+        "relation": "capital_of",
+        "subject": "United States of America",
+        "object": "Washington, D.C."
+    },
+    {
+        "input": "Washington, D.C. operates as United States of America's capital",
+        "relation": "capital_of",
+        "subject": "United States of America",
+        "object": "Washington, D.C."
+    },
+    {
+        "input": "The capital of Japan is Tokyo.",
+        "relation": "capital_of",
+        "subject": "Japan",
+        "object": "Tokyo"
+    },
+    {
+        "input": "Tokyo is the capital of Japan.",
+        "relation": "capital_of",
+        "subject": "Japan",
+        "object": "Tokyo"
+    },
+    {
+        "input": "Japan's capital is Tokyo.",
+        "relation": "capital_of",
+        "subject": "Japan",
+        "object": "Tokyo"
+    },
+    {
+        "input": "Japan's  administrative capital is Tokyo",
+        "relation": "capital_of",
+        "subject": "Japan",
+        "object": "Tokyo"
+    },
+    {
+        "input": "Tokyo operates as Japan's capital",
+        "relation": "capital_of",
+        "subject": "Japan",
+        "object": "Tokyo"
+    },
+    {
+        "input": "The capital of South Korea is Seoul.",
+        "relation": "capital_of",
+        "subject": "South Korea",
+        "object": "Seoul"
+    },
+    {
+        "input": "Seoul is the capital of South Korea.",
+        "relation": "capital_of",
+        "subject": "South Korea",
+        "object": "Seoul"
+    },
+    {
+        "input": "South Korea's capital is Seoul.",
+        "relation": "capital_of",
+        "subject": "South Korea",
+        "object": "Seoul"
+    },
+    {
+        "input": "South Korea's  administrative capital is Seoul",
+        "relation": "capital_of",
+        "subject": "South Korea",
+        "object": "Seoul"
+    },
+    {
+        "input": "Seoul operates as South Korea's capital",
+        "relation": "capital_of",
+        "subject": "South Korea",
+        "object": "Seoul"
+    },
+    {
+        "input": "The capital of Bangladesh is Dhaka.",
+        "relation": "capital_of",
+        "subject": "Bangladesh",
+        "object": "Dhaka"
+    },
+    {
+        "input": "Dhaka is the capital of Bangladesh.",
+        "relation": "capital_of",
+        "subject": "Bangladesh",
+        "object": "Dhaka"
+    },
+    {
+        "input": "Bangladesh's capital is Dhaka.",
+        "relation": "capital_of",
+        "subject": "Bangladesh",
+        "object": "Dhaka"
+    },
+    {
+        "input": "Bangladesh's  administrative capital is Dhaka",
+        "relation": "capital_of",
+        "subject": "Bangladesh",
+        "object": "Dhaka"
+    },
+    {
+        "input": "Dhaka operates as Bangladesh's capital",
+        "relation": "capital_of",
+        "subject": "Bangladesh",
+        "object": "Dhaka"
+    },
+    {
+        "input": "The capital of China is Beijing.",
+        "relation": "capital_of",
+        "subject": "China",
+        "object": "Beijing"
+    },
+    {
+        "input": "Beijing is the capital of China.",
+        "relation": "capital_of",
+        "subject": "China",
+        "object": "Beijing"
+    },
+    {
+        "input": "China's capital is Beijing.",
+        "relation": "capital_of",
+        "subject": "China",
+        "object": "Beijing"
+    },
+    {
+        "input": "China's  administrative capital is Beijing",
+        "relation": "capital_of",
+        "subject": "China",
+        "object": "Beijing"
+    },
+    {
+        "input": "Beijing operates as China's capital",
+        "relation": "capital_of",
+        "subject": "China",
+        "object": "Beijing"
+    },
+    {
+        "input": "The capital of United Kingdom is London.",
+        "relation": "capital_of",
+        "subject": "United Kingdom",
+        "object": "London"
+    },
+    {
+        "input": "London is the capital of United Kingdom.",
+        "relation": "capital_of",
+        "subject": "United Kingdom",
+        "object": "London"
+    },
+    {
+        "input": "United Kingdom's capital is London.",
+        "relation": "capital_of",
+        "subject": "United Kingdom",
+        "object": "London"
+    },
+    {
+        "input": "United Kingdom's  administrative capital is London",
+        "relation": "capital_of",
+        "subject": "United Kingdom",
+        "object": "London"
+    },
+    {
+        "input": "London operates as United Kingdom's capital",
+        "relation": "capital_of",
+        "subject": "United Kingdom",
+        "object": "London"
+    },
+    {
+        "input": "The capital of Australia is Canberra.",
+        "relation": "capital_of",
+        "subject": "Australia",
+        "object": "Canberra"
+    },
+    {
+        "input": "Canberra is the capital of Australia.",
+        "relation": "capital_of",
+        "subject": "Australia",
+        "object": "Canberra"
+    },
+    {
+        "input": "Australia's capital is Canberra.",
+        "relation": "capital_of",
+        "subject": "Australia",
+        "object": "Canberra"
+    },
+    {
+        "input": "Australia's  administrative capital is Canberra",
+        "relation": "capital_of",
+        "subject": "Australia",
+        "object": "Canberra"
+    },
+    {
+        "input": "Canberra operates as Australia's capital",
+        "relation": "capital_of",
+        "subject": "Australia",
+        "object": "Canberra"
+    },
+    {
+        "input": "The capital of Canada is Ottawa.",
+        "relation": "capital_of",
+        "subject": "Canada",
+        "object": "Ottawa"
+    },
+    {
+        "input": "Ottawa is the capital of Canada.",
+        "relation": "capital_of",
+        "subject": "Canada",
+        "object": "Ottawa"
+    },
+    {
+        "input": "Canada's capital is Ottawa.",
+        "relation": "capital_of",
+        "subject": "Canada",
+        "object": "Ottawa"
+    },
+    {
+        "input": "Canada's  administrative capital is Ottawa",
+        "relation": "capital_of",
+        "subject": "Canada",
+        "object": "Ottawa"
+    },
+    {
+        "input": "Ottawa operates as Canada's capital",
+        "relation": "capital_of",
+        "subject": "Canada",
+        "object": "Ottawa"
+    },
+    {
+        "input": "The capital of Brazil is Bras\u00edlia.",
+        "relation": "capital_of",
+        "subject": "Brazil",
+        "object": "Bras\u00edlia"
+    },
+    {
+        "input": "Bras\u00edlia is the capital of Brazil.",
+        "relation": "capital_of",
+        "subject": "Brazil",
+        "object": "Bras\u00edlia"
+    },
+    {
+        "input": "Brazil's capital is Bras\u00edlia.",
+        "relation": "capital_of",
+        "subject": "Brazil",
+        "object": "Bras\u00edlia"
+    },
+    {
+        "input": "Brazil's  administrative capital is Bras\u00edlia",
+        "relation": "capital_of",
+        "subject": "Brazil",
+        "object": "Bras\u00edlia"
+    },
+    {
+        "input": "Bras\u00edlia operates as Brazil's capital",
+        "relation": "capital_of",
+        "subject": "Brazil",
+        "object": "Bras\u00edlia"
+    },
+    {
+        "input": "The capital of Mexico is Mexico City.",
+        "relation": "capital_of",
+        "subject": "Mexico",
+        "object": "Mexico City"
+    },
+    {
+        "input": "Mexico City is the capital of Mexico.",
+        "relation": "capital_of",
+        "subject": "Mexico",
+        "object": "Mexico City"
+    },
+    {
+        "input": "Mexico's capital is Mexico City.",
+        "relation": "capital_of",
+        "subject": "Mexico",
+        "object": "Mexico City"
+    },
+    {
+        "input": "Mexico's  administrative capital is Mexico City",
+        "relation": "capital_of",
+        "subject": "Mexico",
+        "object": "Mexico City"
+    },
+    {
+        "input": "Mexico City operates as Mexico's capital",
+        "relation": "capital_of",
+        "subject": "Mexico",
+        "object": "Mexico City"
+    },
+    {
+        "input": "The capital of Russia is Moscow.",
+        "relation": "capital_of",
+        "subject": "Russia",
+        "object": "Moscow"
+    },
+    {
+        "input": "Moscow is the capital of Russia.",
+        "relation": "capital_of",
+        "subject": "Russia",
+        "object": "Moscow"
+    },
+    {
+        "input": "Russia's capital is Moscow.",
+        "relation": "capital_of",
+        "subject": "Russia",
+        "object": "Moscow"
+    },
+    {
+        "input": "Russia's  administrative capital is Moscow",
+        "relation": "capital_of",
+        "subject": "Russia",
+        "object": "Moscow"
+    },
+    {
+        "input": "Moscow operates as Russia's capital",
+        "relation": "capital_of",
+        "subject": "Russia",
+        "object": "Moscow"
+    },
+    {
+        "input": "The capital of Turkey is Ankara.",
+        "relation": "capital_of",
+        "subject": "Turkey",
+        "object": "Ankara"
+    },
+    {
+        "input": "Ankara is the capital of Turkey.",
+        "relation": "capital_of",
+        "subject": "Turkey",
+        "object": "Ankara"
+    },
+    {
+        "input": "Turkey's capital is Ankara.",
+        "relation": "capital_of",
+        "subject": "Turkey",
+        "object": "Ankara"
+    },
+    {
+        "input": "Turkey's  administrative capital is Ankara",
+        "relation": "capital_of",
+        "subject": "Turkey",
+        "object": "Ankara"
+    },
+    {
+        "input": "Ankara operates as Turkey's capital",
+        "relation": "capital_of",
+        "subject": "Turkey",
+        "object": "Ankara"
+    },
+    {
+        "input": "The capital of Saudi Arabia is Riyadh.",
+        "relation": "capital_of",
+        "subject": "Saudi Arabia",
+        "object": "Riyadh"
+    },
+    {
+        "input": "Riyadh is the capital of Saudi Arabia.",
+        "relation": "capital_of",
+        "subject": "Saudi Arabia",
+        "object": "Riyadh"
+    },
+    {
+        "input": "Saudi Arabia's capital is Riyadh.",
+        "relation": "capital_of",
+        "subject": "Saudi Arabia",
+        "object": "Riyadh"
+    },
+    {
+        "input": "Saudi Arabia's  administrative capital is Riyadh",
+        "relation": "capital_of",
+        "subject": "Saudi Arabia",
+        "object": "Riyadh"
+    },
+    {
+        "input": "Riyadh operates as Saudi Arabia's capital",
+        "relation": "capital_of",
+        "subject": "Saudi Arabia",
+        "object": "Riyadh"
+    },
+    {
+        "input": "The capital of Thailand is Bangkok.",
+        "relation": "capital_of",
+        "subject": "Thailand",
+        "object": "Bangkok"
+    },
+    {
+        "input": "Bangkok is the capital of Thailand.",
+        "relation": "capital_of",
+        "subject": "Thailand",
+        "object": "Bangkok"
+    },
+    {
+        "input": "Thailand's capital is Bangkok.",
+        "relation": "capital_of",
+        "subject": "Thailand",
+        "object": "Bangkok"
+    },
+    {
+        "input": "Thailand's  administrative capital is Bangkok",
+        "relation": "capital_of",
+        "subject": "Thailand",
+        "object": "Bangkok"
+    },
+    {
+        "input": "Bangkok operates as Thailand's capital",
+        "relation": "capital_of",
+        "subject": "Thailand",
+        "object": "Bangkok"
+    },
+    {
+        "input": "The capital of Vietnam is Hanoi.",
+        "relation": "capital_of",
+        "subject": "Vietnam",
+        "object": "Hanoi"
+    },
+    {
+        "input": "Hanoi is the capital of Vietnam.",
+        "relation": "capital_of",
+        "subject": "Vietnam",
+        "object": "Hanoi"
+    },
+    {
+        "input": "Vietnam's capital is Hanoi.",
+        "relation": "capital_of",
+        "subject": "Vietnam",
+        "object": "Hanoi"
+    },
+    {
+        "input": "Vietnam's  administrative capital is Hanoi",
+        "relation": "capital_of",
+        "subject": "Vietnam",
+        "object": "Hanoi"
+    },
+    {
+        "input": "Hanoi operates as Vietnam's capital",
+        "relation": "capital_of",
+        "subject": "Vietnam",
+        "object": "Hanoi"
+    },
+    {
+        "input": "The capital of Singapore is Singapore.",
+        "relation": "capital_of",
+        "subject": "Singapore",
+        "object": "Singapore"
+    },
+    {
+        "input": "Singapore is the capital of Singapore.",
+        "relation": "capital_of",
+        "subject": "Singapore",
+        "object": "Singapore"
+    },
+    {
+        "input": "Singapore's capital is Singapore.",
+        "relation": "capital_of",
+        "subject": "Singapore",
+        "object": "Singapore"
+    },
+    {
+        "input": "Singapore's  administrative capital is Singapore",
+        "relation": "capital_of",
+        "subject": "Singapore",
+        "object": "Singapore"
+    },
+    {
+        "input": "Singapore operates as Singapore's capital",
+        "relation": "capital_of",
+        "subject": "Singapore",
+        "object": "Singapore"
+    },
+    {
+        "input": "Isa's parent is R. Sunila Nath.",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath is the parent of Isa.",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath is Isa's parent",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath parents Isa",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath raises Isa",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "Isa's parent is Singaravel Ramakrishnan.",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan is the parent of Isa.",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan is Isa's parent",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan parents Isa",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan raises Isa",
+        "relation": "parent_of",
+        "subject": "Isa",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Karnam Alekya's parent is R. Sucheta Nath.",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "R. Sucheta Nath"
+    },
+    {
+        "input": "R. Sucheta Nath is the parent of Karnam Alekya.",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "R. Sucheta Nath"
+    },
+    {
+        "input": "R. Sucheta Nath is Karnam Alekya's parent",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "R. Sucheta Nath"
+    },
+    {
+        "input": "R. Sucheta Nath parents Karnam Alekya",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "R. Sucheta Nath"
+    },
+    {
+        "input": "R. Sucheta Nath raises Karnam Alekya",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "R. Sucheta Nath"
+    },
+    {
+        "input": "Karnam Aadhya's parent is R. Suchetha Nath.",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "R. Suchetha Nath"
+    },
+    {
+        "input": "R. Suchetha Nath is the parent of Karnam Aadhya.",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "R. Suchetha Nath"
+    },
+    {
+        "input": "R. Suchetha Nath is Karnam Aadhya's parent",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "R. Suchetha Nath"
+    },
+    {
+        "input": "R. Suchetha Nath parents Karnam Aadhya",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "R. Suchetha Nath"
+    },
+    {
+        "input": "R. Suchetha Nath raises Karnam Aadhya",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "R. Suchetha Nath"
+    },
+    {
+        "input": "Karnam Alekya's parent is Karnam Naveen Chakravarthy.",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy is the parent of Karnam Alekya.",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy is Karnam Alekya's parent",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy parents Karnam Alekya",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy raises Karnam Alekya",
+        "relation": "parent_of",
+        "subject": "Karnam Alekya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Aadhya's parent is Karnam Naveen Chakravarthy.",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy is the parent of Karnam Aadhya.",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy is Karnam Aadhya's parent",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy parents Karnam Aadhya",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "Karnam Naveen Chakravarthy raises Karnam Aadhya",
+        "relation": "parent_of",
+        "subject": "Karnam Aadhya",
+        "object": "Karnam Naveen Chakravarthy"
+    },
+    {
+        "input": "R. Sunila nath's parent is Sarala.",
+        "relation": "parent_of",
+        "subject": "R. Sunila nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is the parent of R. Sunila nath.",
+        "relation": "parent_of",
+        "subject": "R. Sunila nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is R. Sunila nath's parent",
+        "relation": "parent_of",
+        "subject": "R. Sunila nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala parents R. Sunila nath",
+        "relation": "parent_of",
+        "subject": "R. Sunila nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala raises R. Sunila nath",
+        "relation": "parent_of",
+        "subject": "R. Sunila nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Krishna Priya Singaravel's parent is Singaravel Ramakrishnan.",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan is the parent of Krishna Priya Singaravel.",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan is Krishna Priya Singaravel's parent",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan parents Krishna Priya Singaravel",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Singaravel Ramakrishnan raises Krishna Priya Singaravel",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "Singaravel Ramakrishnan"
+    },
+    {
+        "input": "Krishna Priya Singaravel's parent is R. Sunila Nath.",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath is the parent of Krishna Priya Singaravel.",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath is Krishna Priya Singaravel's parent",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath parents Krishna Priya Singaravel",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Sunila Nath raises Krishna Priya Singaravel",
+        "relation": "parent_of",
+        "subject": "Krishna Priya Singaravel",
+        "object": "R. Sunila Nath"
+    },
+    {
+        "input": "R. Suchetha nath's parent is Sarala.",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is the parent of R. Suchetha nath.",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is R. Suchetha nath's parent",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala parents R. Suchetha nath",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala raises R. Suchetha nath",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "R. Suchetha nath's parent is P. Ravindranath.",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath is the parent of R. Suchetha nath.",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath is R. Suchetha nath's parent",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath parents R. Suchetha nath",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath raises R. Suchetha nath",
+        "relation": "parent_of",
+        "subject": "R. Suchetha nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "R. Sugamya nath's parent is Sarala.",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is the parent of R. Sugamya nath.",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala is R. Sugamya nath's parent",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala parents R. Sugamya nath",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "Sarala raises R. Sugamya nath",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "Sarala"
+    },
+    {
+        "input": "R. Sugamya nath's parent is P. Ravindranath.",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath is the parent of R. Sugamya nath.",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath is R. Sugamya nath's parent",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath parents R. Sugamya nath",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "P. Ravindranath raises R. Sugamya nath",
+        "relation": "parent_of",
+        "subject": "R. Sugamya nath",
+        "object": "P. Ravindranath"
+    },
+    {
+        "input": "The currency of Japan is the Japanese Yen.",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "Japan uses the Japanese Yen in trade.",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "Japan uses the Japanese Yen as its currency.",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "The Japanese Yen is the Japan's national currency",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "The Japanese Yen is used widely in Japan",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "The Japanese Yen is Japan's national currency",
+        "relation": "currency_of",
+        "subject": "Japan",
+        "object": "Japanese Yen"
+    },
+    {
+        "input": "The currency of India is the Indian Rupee.",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "India uses the Indian Rupee in trade.",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "India uses the Indian Rupee as its currency.",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "The Indian Rupee is the India's national currency",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "The Indian Rupee is used widely in India",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "The Indian Rupee is India's national currency",
+        "relation": "currency_of",
+        "subject": "India",
+        "object": "Indian Rupee"
+    },
+    {
+        "input": "The currency of Switzerland is the Swiss Franc.",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "Switzerland uses the Swiss Franc in trade.",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "Switzerland uses the Swiss Franc as its currency.",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "The Swiss Franc is the Switzerland's national currency",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "The Swiss Franc is used widely in Switzerland",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "The Swiss Franc is Switzerland's national currency",
+        "relation": "currency_of",
+        "subject": "Switzerland",
+        "object": "Swiss Franc"
+    },
+    {
+        "input": "The currency of United States of America is the US Dollar.",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "United States of America uses the US Dollar in trade.",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "United States of America uses the US Dollar as its currency.",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "The US Dollar is the United States of America's national currency",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "The US Dollar is used widely in United States of America",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "The US Dollar is United States of America's national currency",
+        "relation": "currency_of",
+        "subject": "United States of America",
+        "object": "US Dollar"
+    },
+    {
+        "input": "The currency of Bangladesh is the Bangladeshi Taka.",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "Bangladesh uses the Bangladeshi Taka in trade.",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "Bangladesh uses the Bangladeshi Taka as its currency.",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "The Bangladeshi Taka is the Bangladesh's national currency",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "The Bangladeshi Taka is used widely in Bangladesh",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "The Bangladeshi Taka is Bangladesh's national currency",
+        "relation": "currency_of",
+        "subject": "Bangladesh",
+        "object": "Bangladeshi Taka"
+    },
+    {
+        "input": "The currency of China is the Chinese Yuan.",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "China uses the Chinese Yuan in trade.",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "China uses the Chinese Yuan as its currency.",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "The Chinese Yuan is the China's national currency",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "The Chinese Yuan is used widely in China",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "The Chinese Yuan is China's national currency",
+        "relation": "currency_of",
+        "subject": "China",
+        "object": "Chinese Yuan"
+    },
+    {
+        "input": "The currency of United Kingdom is the Pound Sterling.",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "United Kingdom uses the Pound Sterling in trade.",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "United Kingdom uses the Pound Sterling as its currency.",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "The Pound Sterling is the United Kingdom's national currency",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "The Pound Sterling is used widely in United Kingdom",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "The Pound Sterling is United Kingdom's national currency",
+        "relation": "currency_of",
+        "subject": "United Kingdom",
+        "object": "Pound Sterling"
+    },
+    {
+        "input": "The currency of South Korea is the South Korean Won.",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "South Korea uses the South Korean Won in trade.",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "South Korea uses the South Korean Won as its currency.",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "The South Korean Won is the South Korea's national currency",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "The South Korean Won is used widely in South Korea",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "The South Korean Won is South Korea's national currency",
+        "relation": "currency_of",
+        "subject": "South Korea",
+        "object": "South Korean Won"
+    },
+    {
+        "input": "The currency of Australia is the Australian Dollar.",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "Australia uses the Australian Dollar in trade.",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "Australia uses the Australian Dollar as its currency.",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "The Australian Dollar is the Australia's national currency",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "The Australian Dollar is used widely in Australia",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "The Australian Dollar is Australia's national currency",
+        "relation": "currency_of",
+        "subject": "Australia",
+        "object": "Australian Dollar"
+    },
+    {
+        "input": "The currency of Canada is the Canadian Dollar.",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "Canada uses the Canadian Dollar in trade.",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "Canada uses the Canadian Dollar as its currency.",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "The Canadian Dollar is the Canada's national currency",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "The Canadian Dollar is used widely in Canada",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "The Canadian Dollar is Canada's national currency",
+        "relation": "currency_of",
+        "subject": "Canada",
+        "object": "Canadian Dollar"
+    },
+    {
+        "input": "The currency of Brazil is the Brazilian Real.",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "Brazil uses the Brazilian Real in trade.",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "Brazil uses the Brazilian Real as its currency.",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "The Brazilian Real is the Brazil's national currency",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "The Brazilian Real is used widely in Brazil",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "The Brazilian Real is Brazil's national currency",
+        "relation": "currency_of",
+        "subject": "Brazil",
+        "object": "Brazilian Real"
+    },
+    {
+        "input": "The currency of Mexico is the Mexican Peso.",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "Mexico uses the Mexican Peso in trade.",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "Mexico uses the Mexican Peso as its currency.",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "The Mexican Peso is the Mexico's national currency",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "The Mexican Peso is used widely in Mexico",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "The Mexican Peso is Mexico's national currency",
+        "relation": "currency_of",
+        "subject": "Mexico",
+        "object": "Mexican Peso"
+    },
+    {
+        "input": "The currency of Russia is the Russian Ruble.",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "Russia uses the Russian Ruble in trade.",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "Russia uses the Russian Ruble as its currency.",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "The Russian Ruble is the Russia's national currency",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "The Russian Ruble is used widely in Russia",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "The Russian Ruble is Russia's national currency",
+        "relation": "currency_of",
+        "subject": "Russia",
+        "object": "Russian Ruble"
+    },
+    {
+        "input": "The currency of Turkey is the Turkish Lira.",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "Turkey uses the Turkish Lira in trade.",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "Turkey uses the Turkish Lira as its currency.",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "The Turkish Lira is the Turkey's national currency",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "The Turkish Lira is used widely in Turkey",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "The Turkish Lira is Turkey's national currency",
+        "relation": "currency_of",
+        "subject": "Turkey",
+        "object": "Turkish Lira"
+    },
+    {
+        "input": "The currency of South Africa is the South African Rand.",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "South Africa uses the South African Rand in trade.",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "South Africa uses the South African Rand as its currency.",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "The South African Rand is the South Africa's national currency",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "The South African Rand is used widely in South Africa",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "The South African Rand is South Africa's national currency",
+        "relation": "currency_of",
+        "subject": "South Africa",
+        "object": "South African Rand"
+    },
+    {
+        "input": "The currency of Saudi Arabia is the Saudi Riyal.",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "Saudi Arabia uses the Saudi Riyal in trade.",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "Saudi Arabia uses the Saudi Riyal as its currency.",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "The Saudi Riyal is the Saudi Arabia's national currency",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "The Saudi Riyal is used widely in Saudi Arabia",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "The Saudi Riyal is Saudi Arabia's national currency",
+        "relation": "currency_of",
+        "subject": "Saudi Arabia",
+        "object": "Saudi Riyal"
+    },
+    {
+        "input": "The currency of Thailand is the Thai Baht.",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "Thailand uses the Thai Baht in trade.",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "Thailand uses the Thai Baht as its currency.",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "The Thai Baht is the Thailand's national currency",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "The Thai Baht is used widely in Thailand",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "The Thai Baht is Thailand's national currency",
+        "relation": "currency_of",
+        "subject": "Thailand",
+        "object": "Thai Baht"
+    },
+    {
+        "input": "The currency of Vietnam is the Vietnamese Dong.",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "Vietnam uses the Vietnamese Dong in trade.",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "Vietnam uses the Vietnamese Dong as its currency.",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "The Vietnamese Dong is the Vietnam's national currency",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "The Vietnamese Dong is used widely in Vietnam",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "The Vietnamese Dong is Vietnam's national currency",
+        "relation": "currency_of",
+        "subject": "Vietnam",
+        "object": "Vietnamese Dong"
+    },
+    {
+        "input": "The currency of Singapore is the Singapore Dollar.",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "Singapore uses the Singapore Dollar in trade.",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "Singapore uses the Singapore Dollar as its currency.",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "The Singapore Dollar is the Singapore's national currency",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "The Singapore Dollar is used widely in Singapore",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "The Singapore Dollar is Singapore's national currency",
+        "relation": "currency_of",
+        "subject": "Singapore",
+        "object": "Singapore Dollar"
+    },
+    {
+        "input": "The currency of Indonesia is the Indonesian Rupiah.",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "Indonesia uses the Indonesian Rupiah in trade.",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "Indonesia uses the Indonesian Rupiah as its currency.",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "The Indonesian Rupiah is the Indonesia's national currency",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "The Indonesian Rupiah is used widely in Indonesia",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "The Indonesian Rupiah is Indonesia's national currency",
+        "relation": "currency_of",
+        "subject": "Indonesia",
+        "object": "Indonesian Rupiah"
+    },
+    {
+        "input": "The official language of Japan is Japanese.",
+        "relation": "official_language",
+        "subject": "Japan",
+        "object": "Japanese"
+    },
+    {
+        "input": "Japanese is the official language of Japan.",
+        "relation": "official_language",
+        "subject": "Japan",
+        "object": "Japanese"
+    },
+    {
+        "input": "Japan's official language is Japanese.",
+        "relation": "official_language",
+        "subject": "Japan",
+        "object": "Japanese"
+    },
+    {
+        "input": "Japan officially uses Japanese.",
+        "relation": "official_language",
+        "subject": "Japan",
+        "object": "Japanese"
+    },
+    {
+        "input": "The official language of France is French.",
+        "relation": "official_language",
+        "subject": "France",
+        "object": "French"
+    },
+    {
+        "input": "French is the official language of France.",
+        "relation": "official_language",
+        "subject": "France",
+        "object": "French"
+    },
+    {
+        "input": "France's official language is French.",
+        "relation": "official_language",
+        "subject": "France",
+        "object": "French"
+    },
+    {
+        "input": "France officially uses French.",
+        "relation": "official_language",
+        "subject": "France",
+        "object": "French"
+    },
+    {
+        "input": "The official language of India is Hindi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Hindi"
+    },
+    {
+        "input": "Hindi is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Hindi"
+    },
+    {
+        "input": "India's official language is Hindi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Hindi"
+    },
+    {
+        "input": "India officially uses Hindi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Hindi"
+    },
+    {
+        "input": "The official language of Bangladesh is Bengali.",
+        "relation": "official_language",
+        "subject": "Bangladesh",
+        "object": "Bengali"
+    },
+    {
+        "input": "Bengali is the official language of Bangladesh.",
+        "relation": "official_language",
+        "subject": "Bangladesh",
+        "object": "Bengali"
+    },
+    {
+        "input": "Bangladesh's official language is Bengali.",
+        "relation": "official_language",
+        "subject": "Bangladesh",
+        "object": "Bengali"
+    },
+    {
+        "input": "Bangladesh officially uses Bengali.",
+        "relation": "official_language",
+        "subject": "Bangladesh",
+        "object": "Bengali"
+    },
+    {
+        "input": "The official language of India is Assamese.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Assamese"
+    },
+    {
+        "input": "Assamese is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Assamese"
+    },
+    {
+        "input": "India's official language is Assamese.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Assamese"
+    },
+    {
+        "input": "India officially uses Assamese.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Assamese"
+    },
+    {
+        "input": "The official language of India is Bengali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bengali"
+    },
+    {
+        "input": "Bengali is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bengali"
+    },
+    {
+        "input": "India's official language is Bengali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bengali"
+    },
+    {
+        "input": "India officially uses Bengali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bengali"
+    },
+    {
+        "input": "The official language of India is Bodo.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bodo"
+    },
+    {
+        "input": "Bodo is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bodo"
+    },
+    {
+        "input": "India's official language is Bodo.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bodo"
+    },
+    {
+        "input": "India officially uses Bodo.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Bodo"
+    },
+    {
+        "input": "The official language of India is Dogri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Dogri"
+    },
+    {
+        "input": "Dogri is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Dogri"
+    },
+    {
+        "input": "India's official language is Dogri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Dogri"
+    },
+    {
+        "input": "India officially uses Dogri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Dogri"
+    },
+    {
+        "input": "The official language of India is Gujarati.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Gujarati"
+    },
+    {
+        "input": "Gujarati is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Gujarati"
+    },
+    {
+        "input": "India's official language is Gujarati.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Gujarati"
+    },
+    {
+        "input": "India officially uses Gujarati.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Gujarati"
+    },
+    {
+        "input": "The official language of India is Kannada.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kannada"
+    },
+    {
+        "input": "Kannada is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kannada"
+    },
+    {
+        "input": "India's official language is Kannada.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kannada"
+    },
+    {
+        "input": "India officially uses Kannada.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kannada"
+    },
+    {
+        "input": "The official language of India is Kashmiri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kashmiri"
+    },
+    {
+        "input": "Kashmiri is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kashmiri"
+    },
+    {
+        "input": "India's official language is Kashmiri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kashmiri"
+    },
+    {
+        "input": "India officially uses Kashmiri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Kashmiri"
+    },
+    {
+        "input": "The official language of India is Konkani.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Konkani"
+    },
+    {
+        "input": "Konkani is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Konkani"
+    },
+    {
+        "input": "India's official language is Konkani.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Konkani"
+    },
+    {
+        "input": "India officially uses Konkani.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Konkani"
+    },
+    {
+        "input": "The official language of India is Maithili.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Maithili"
+    },
+    {
+        "input": "Maithili is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Maithili"
+    },
+    {
+        "input": "India's official language is Maithili.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Maithili"
+    },
+    {
+        "input": "India officially uses Maithili.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Maithili"
+    },
+    {
+        "input": "The official language of India is Malayalam.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Malayalam"
+    },
+    {
+        "input": "Malayalam is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Malayalam"
+    },
+    {
+        "input": "India's official language is Malayalam.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Malayalam"
+    },
+    {
+        "input": "India officially uses Malayalam.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Malayalam"
+    },
+    {
+        "input": "The official language of India is Manipuri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Manipuri"
+    },
+    {
+        "input": "Manipuri is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Manipuri"
+    },
+    {
+        "input": "India's official language is Manipuri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Manipuri"
+    },
+    {
+        "input": "India officially uses Manipuri.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Manipuri"
+    },
+    {
+        "input": "The official language of India is Marathi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Marathi"
+    },
+    {
+        "input": "Marathi is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Marathi"
+    },
+    {
+        "input": "India's official language is Marathi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Marathi"
+    },
+    {
+        "input": "India officially uses Marathi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Marathi"
+    },
+    {
+        "input": "The official language of India is Nepali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Nepali"
+    },
+    {
+        "input": "Nepali is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Nepali"
+    },
+    {
+        "input": "India's official language is Nepali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Nepali"
+    },
+    {
+        "input": "India officially uses Nepali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Nepali"
+    },
+    {
+        "input": "The official language of India is Odia.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Odia"
+    },
+    {
+        "input": "Odia is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Odia"
+    },
+    {
+        "input": "India's official language is Odia.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Odia"
+    },
+    {
+        "input": "India officially uses Odia.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Odia"
+    },
+    {
+        "input": "The official language of India is Punjabi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Punjabi"
+    },
+    {
+        "input": "Punjabi is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Punjabi"
+    },
+    {
+        "input": "India's official language is Punjabi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Punjabi"
+    },
+    {
+        "input": "India officially uses Punjabi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Punjabi"
+    },
+    {
+        "input": "The official language of India is Sanskrit.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sanskrit"
+    },
+    {
+        "input": "Sanskrit is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sanskrit"
+    },
+    {
+        "input": "India's official language is Sanskrit.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sanskrit"
+    },
+    {
+        "input": "India officially uses Sanskrit.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sanskrit"
+    },
+    {
+        "input": "The official language of India is Santali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Santali"
+    },
+    {
+        "input": "Santali is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Santali"
+    },
+    {
+        "input": "India's official language is Santali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Santali"
+    },
+    {
+        "input": "India officially uses Santali.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Santali"
+    },
+    {
+        "input": "The official language of India is Sindhi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sindhi"
+    },
+    {
+        "input": "Sindhi is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sindhi"
+    },
+    {
+        "input": "India's official language is Sindhi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sindhi"
+    },
+    {
+        "input": "India officially uses Sindhi.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Sindhi"
+    },
+    {
+        "input": "The official language of India is Telugu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Telugu"
+    },
+    {
+        "input": "Telugu is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Telugu"
+    },
+    {
+        "input": "India's official language is Telugu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Telugu"
+    },
+    {
+        "input": "India officially uses Telugu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Telugu"
+    },
+    {
+        "input": "The official language of India is Tamil.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Tamil"
+    },
+    {
+        "input": "Tamil is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Tamil"
+    },
+    {
+        "input": "India's official language is Tamil.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Tamil"
+    },
+    {
+        "input": "India officially uses Tamil.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Tamil"
+    },
+    {
+        "input": "The official language of India is Urdu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Urdu"
+    },
+    {
+        "input": "Urdu is the official language of India.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Urdu"
+    },
+    {
+        "input": "India's official language is Urdu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Urdu"
+    },
+    {
+        "input": "India officially uses Urdu.",
+        "relation": "official_language",
+        "subject": "India",
+        "object": "Urdu"
+    },
+    {
+        "input": "The official language of Germany is German.",
+        "relation": "official_language",
+        "subject": "Germany",
+        "object": "German"
+    },
+    {
+        "input": "German is the official language of Germany.",
+        "relation": "official_language",
+        "subject": "Germany",
+        "object": "German"
+    },
+    {
+        "input": "Germany's official language is German.",
+        "relation": "official_language",
+        "subject": "Germany",
+        "object": "German"
+    },
+    {
+        "input": "Germany officially uses German.",
+        "relation": "official_language",
+        "subject": "Germany",
+        "object": "German"
+    },
+    {
+        "input": "The official language of Brazil is Portugese.",
+        "relation": "official_language",
+        "subject": "Brazil",
+        "object": "Portugese"
+    },
+    {
+        "input": "Portugese is the official language of Brazil.",
+        "relation": "official_language",
+        "subject": "Brazil",
+        "object": "Portugese"
+    },
+    {
+        "input": "Brazil's official language is Portugese.",
+        "relation": "official_language",
+        "subject": "Brazil",
+        "object": "Portugese"
+    },
+    {
+        "input": "Brazil officially uses Portugese.",
+        "relation": "official_language",
+        "subject": "Brazil",
+        "object": "Portugese"
+    },
+    {
+        "input": "The official language of China is Mandarin Chinese.",
+        "relation": "official_language",
+        "subject": "China",
+        "object": "Mandarin Chinese"
+    },
+    {
+        "input": "Mandarin Chinese is the official language of China.",
+        "relation": "official_language",
+        "subject": "China",
+        "object": "Mandarin Chinese"
+    },
+    {
+        "input": "China's official language is Mandarin Chinese.",
+        "relation": "official_language",
+        "subject": "China",
+        "object": "Mandarin Chinese"
+    },
+    {
+        "input": "China officially uses Mandarin Chinese.",
+        "relation": "official_language",
+        "subject": "China",
+        "object": "Mandarin Chinese"
+    },
+    {
+        "input": "The official language of Russia is Russian.",
+        "relation": "official_language",
+        "subject": "Russia",
+        "object": "Russian"
+    },
+    {
+        "input": "Russian is the official language of Russia.",
+        "relation": "official_language",
+        "subject": "Russia",
+        "object": "Russian"
+    },
+    {
+        "input": "Russia's official language is Russian.",
+        "relation": "official_language",
+        "subject": "Russia",
+        "object": "Russian"
+    },
+    {
+        "input": "Russia officially uses Russian.",
+        "relation": "official_language",
+        "subject": "Russia",
+        "object": "Russian"
+    }
 ]
