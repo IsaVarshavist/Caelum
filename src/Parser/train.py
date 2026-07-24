@@ -26,8 +26,50 @@ inputs=[]
 for item in encoding:
    inputs.append(item["input"])
 x = torch.tensor(inputs)
+subject_targets = torch.tensor([item["subject"] for item in encoding])
+relation_targets = torch.tensor([item["relation"] for item in encoding])
+object_targets = torch.tensor([item["object"] for item in encoding])
 print("Encoding done, beginning prediction")
-subject, relation, object = model(x)
-print(subject.shape)
-print(relation.shape)
-print(object.shape)
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+
+for epoch in range(100):
+    optimizer.zero_grad()
+    subject, relation, obj = model(x)
+    subject_loss = criterion(subject, subject_targets)
+    relation_loss = criterion(relation, relation_targets)
+    object_loss = criterion(obj, object_targets)
+    loss = subject_loss + relation_loss + object_loss
+    loss.backward()
+    optimizer.step()
+    print(loss.item())
+
+subject, relation, obj = model(x)
+
+subject_pred = subject.argmax(dim=1)
+
+for i in range(5):
+    print(
+        "Pred:",
+        re_subject_vocab[subject_pred[i].item()],
+        "| Actual:",
+        re_subject_vocab[subject_targets[i].item()]
+    )
+relation_pred = relation.argmax(dim=1)
+
+for i in range(5):
+    print(
+        "Pred:",
+        re_relation_vocab[relation_pred[i].item()],
+        "| Actual:",
+        re_relation_vocab[relation_targets[i].item()]
+    )
+object_pred = obj.argmax(dim=1)
+
+for i in range(5):
+    print(
+        "Pred:",
+        re_object_vocab[object_pred[i].item()],
+        "| Actual:",
+        re_object_vocab[object_targets[i].item()]
+    )
