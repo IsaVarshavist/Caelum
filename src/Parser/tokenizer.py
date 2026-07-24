@@ -25,7 +25,7 @@ def build_reverse_entity_vocab(dataset, entity_key):
         entity = item[entity_key]
         if entity not in vocab:
            vocab[len(vocab)]=entity
-
+    return vocab
 def encode(sentence, vocab):
     sentence = sentence.lower()
     sentence = sentence.replace(".","")
@@ -36,16 +36,16 @@ def encode(sentence, vocab):
     for item in tokens:
         encoding.append(vocab.get(item, vocab["<UNK>"]))
     return encoding
-def encode_dataset(dataset, vocab):
+def encode_dataset(dataset, vocab, subject_vocab, relation_vocab, object_vocab):
     encoded = []
     for item in dataset:
        encoded.append({
             "input": encode(item["input"], vocab),
-            "subject":item["subject"],
-            "relation":item["relation"],
-            "object":item["object"]})
+            "subject":subject_vocab[item["subject"]],
+            "relation":relation_vocab[item["relation"]],
+            "object":object_vocab[item["object"]]})
     return encoded
-def max_length(dataset):
+def max_length(dataset, vocab):
     max_length=0
     for item in dataset:
         encoded = encode(item["input"], vocab)
@@ -57,11 +57,12 @@ def pad(sequence, max_length, pad_id):
           sequence.append(pad_id)
     return sequence
 
-def normalize_encoding(dataset, vocab):
-    max_len= max_length(dataset)
-    encoding = encode_dataset(dataset, vocab)
+def normalize_encoding(dataset, vocab, subject_vocab, relation_vocab, object_vocab):
+    max_len= max_length(dataset, vocab)
+    encoding = encode_dataset(dataset, vocab, subject_vocab, relation_vocab, object_vocab)
     normalized_encoding=[]
     for item in encoding:
-        normalized_encoding.append({"input":pad(item["input"],max_len,vocab["<PAD>"]),"subject":item["subject"],"relation":item["relation"],
+        normalized_encoding.append({"input":pad(item["input"],max_len,vocab["<PAD>"]),"subject":item["subject"],
+        "relation":item["relation"],
         "object":item["object"]})
-
+    return normalized_encoding
